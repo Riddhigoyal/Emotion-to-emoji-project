@@ -13,7 +13,7 @@ Webcam.attach('#Camera');
 
 function take_snapshot(){
     Webcam.snap(function(data_uri){
- document.getElementById("result").innerHTML='<img id="result" src="'+data_uri+'">';
+ document.getElementById("result").innerHTML='<img id="result1" src="'+data_uri+'">';
     });
 }
 
@@ -34,7 +34,7 @@ function speak(){
 }
 
 function check(){
-    img=document.getElementById("result");
+    img=document.getElementById("result1");
     classifier.classify(img ,got_result);
 }
 
